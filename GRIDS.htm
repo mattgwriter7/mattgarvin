@@ -1,0 +1,155 @@
+				<div class="interior">
+					
+					<h1>Grids 'n Boxes</h1>
+					<p>Many things are displayed using Grids. To keep
+						things simple, a grid is always a row of "boxes". 
+						If there appears to be 6 same-sized boxes, 3 on
+						top of the other, it is actually two
+						different "div.grid_3" classes, holding
+						three different "div.box" containers, stacked.
+					</p>
+					
+					<h2>grid_3 Example</h2>
+					<p>This first example is what I just described: a
+						row with 3 boxes in it:</p>
+
+					<div class="grid_3">
+						<div class="box">
+							<ol>
+								<li>This is the first
+										"box" in a "grid_3"
+									<ul>
+										<li>by default grids have a 
+												margin-bottom
+										</li>
+										<li>Add a "short" class to
+												remove margin-bottom
+										</li>
+									</ul>											
+								</li>
+							</ol>			
+						</div>
+						<div class="box">
+							<ol start="2">
+								<li>Boxes are grey by
+										default
+									<ul>
+										<li>they also have padding on
+												all 4 sides by default
+										</li>
+										<li>plus, they are min-height
+												of 180px by default
+										</li>
+									</ul>												
+								</li>
+							</ol>			
+						</div>
+						<div class="box blank">
+							<ol start="3">
+								<li>This 3rd one appears
+										white because the
+										class is "blank"
+									<ul>
+										<li>blanks also have padding
+												removed
+										</li>
+										<li class="note"><u>NOTE</u>: There is 
+												still a margin-bottom on the
+												grid itself!
+										</li>
+									</ul>										
+								</li>
+							</ol>	
+						</div>	
+					</div><!-- end this grid row -->
+
+					<h2>grid_2 Example</h2>
+
+					<div class="grid_2">
+						<div class="box">
+							<ol start="4">
+								<li>This is the 4th "box"
+									<ul>
+										<li>It is in a "grid_2"</li>
+									</ul>	
+								</li>
+							</ol>							
+						</div>
+						<div class="box">
+							<ol start="5">
+								<li>This is the 5th "box"
+									<ul>
+										<li>The &lt;h2&gt; tag has a class="tall" applied 
+											add a margin-bottom after the heading
+										</li>
+										<li>In general, a "tall" class adds vertical
+											spacing, a "short" class removes it.
+										</li>
+										<li class="note"><u>NOTE</u>: Not
+											just for headings, but for many things,
+											including grids. (See Box #6 below.)		
+										</li>
+									</ul>	
+								</li>
+							</ol>						
+						</div>						
+					</div><!-- end this grid row -->
+
+					<h2>grid_1 Example</h2>
+					
+					<div class="grid_1 short">
+						<div class="box">
+							<ol start="6">
+								<li>This is the 6th "box"
+									<ul>
+										<li>It is in a "grid_1"</li>
+										<li>The grid has a "short" class that
+												makes it have no margin-bottom
+										</li>
+										<li>...which makes it butt up
+												against the grid_3 underneath
+										</li>
+									</ul>	
+								</li>
+							</ol>							
+						</div>
+					</div><!-- end this grid row -->
+
+					<div class="grid_3">
+						<div class="box">
+							<ol start="7">
+								<li>This is the 7th "box"</li>
+							</ol>	
+						</div>
+						<div class="box">
+							<ol start="8">
+								<li>This is the 8th "box"</li>
+							</ol>	
+						</div>
+						<div class="box">
+							<ol start="9">
+								<li>This is the 9th "box"</li>
+							</ol>	
+						</div>						
+					</div><!-- end this grid row -->
+
+					<h2>Other Box Examples?</h2>
+					
+					<p>I still need some fancy box stuff... Including:</p>
+					
+					<ol>
+						<li class="tall">A box that will center text (vertically 
+							and horizontally.)</li>
+						<li class="tall">Another one that will center an image (vertically 
+							and horizontally.)</li>
+						<li class="tall">Another one that will show an image
+							in the background, with a caption overlayed
+							at the bottom.</li>
+						<li class="tall">Finally, one that shows an image up
+							top with captioned text underneath
+							<div class="note">
+							By the way, these &lt;li&gt; tags have class="tall" 
+							added to bump up the margin-bottom.</div></li>
+					</ol>
+						
+				</div><!-- end:interior -->

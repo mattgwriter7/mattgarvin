@@ -1,0 +1,649 @@
+/* 
+		http://meyerweb.com/eric/tools/css/reset/ 
+		v2.0 | 20110126
+		License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* 
+		That's it for the "reset".  From here on is
+		my own code.
+		"GENERAL" stuff is used for all of my sites.
+		"CUSTOM" stuff is for a specific instances...
+*/
+
+
+		
+		
+/* 	=========================================
+		GENERAL COMMON SELECTORS
+		========================================= */
+
+		html, body {
+			position: relative;
+			height: 100%;
+			font-family: Verdana, Geneva, sans-serif;
+			font-size: 16px;
+			position: relative;
+		}
+				
+		main { padding: 1.5em 0;  }
+		
+		/* 	sections are for centering header, footer, 
+				and main content */
+		section {
+			width: 1200px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		main section {
+			background-color: #fff;
+			border: 1.5em solid transparent;
+			box-sizing: border-box;
+			overflow: hidden;
+			position: relative;
+			clear: both;
+		}
+
+		
+		header { 
+			background-color: #1c567e; 
+			padding: 2em 0 2.5em 0;
+		}
+		
+				header section a {
+					font-size: 80px; letter-spacing: 1px; 
+					font-weight: bold;
+					text-shadow: 1px 1px 1px #000, 3px 3px 0px #999;
+					color: #fff;
+					font-family: 'Oswald', sans-serif;
+					display: inline-block;
+					box-sizing: border-box;
+				}
+				
+				header section a:hover {
+					color: #fff;
+				}
+		
+		footer { 
+			padding: 0; 
+			min-height: 770px;
+		}		
+		
+		/*	the "pre_footer" adds some bottom 
+				dots that come before the footer */
+		div.pre_footer { 
+			padding: 1em 0 0 0;
+			margin-bottom: 1.5em;
+			border-bottom: 4px dotted #000;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		
+		
+		
+		
+		
+		/* HEADINGS */
+		h1 { 
+			font-family: 'Roboto Slab', serif; 
+			font-size: 80px; letter-spacing: 2px; font-weight: bold;
+			text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
+			margin-bottom: .45em; line-height: 1.1;
+		}
+
+		h2 {
+			font-family: 'Roboto Slab', serif; 
+			font-size: 55px; letter-spacing: 1px; font-weight: bold;
+			text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
+			margin: .75em 0 .15em 0; line-height: 1.1;
+		}
+		
+		h3 { font-weight: bold; letter-spacing: 1px; font-size: 125%;
+				 margin-bottom: .25em;}
+		h4 { font-weight: bold; margin-bottom: .25em;}
+
+		/* FONT STYLES */
+		/* 	make paragraphs that are not last have a bottom margin, adapted from
+				https://stackoverflow.com/questions/36321736/manage-margins-so-that-the-last-elements-have-no-margins	*/
+		p:not(:last-child) { margin-bottom:1em; }
+		b { font-weight: bold; }
+		i { font-style: oblique; }
+
+		/* LINKS */
+		a:link, a:visited, a:hover, a:active { color: blue; }
+		a.grey:link, a.grey:visited, a.grey:hover, a.grey:active { color: grey; }
+		a.black:link, a.black:visited, a.black:hover, 
+		a.black:active { color: black; }
+		
+		hr {
+			clear: both;
+			border-style: none;			
+			height: 0;
+			border-top: 5px solid #fff;
+			margin: 20px 0 5px 0;
+		}
+
+		ol { list-style: decimal; margin-left: 1.25em; }
+		ul { list-style: disc; margin-left: 1em; }		
+
+		button {
+			margin-top: 10px;
+			background: #3498db;
+			background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+			background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+			background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+			background-image: -o-linear-gradient(top, #3498db, #2980b9);
+			background-image: linear-gradient(to bottom, #3498db, #2980b9);
+			-webkit-border-radius: 11;
+			-moz-border-radius: 11;
+			border-radius: 11px;
+			font-family: 'Roboto Slab', serif;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 8px 20px 10px 20px;
+			text-decoration: none;
+			border-width: 3px;
+		}
+
+		button:hover {
+			background: #3cb0fd;
+			background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			text-decoration: none;
+			cursor: pointer;
+		}		
+		button.greyed,
+		button.greyed:hover		{ background: #999; color: #ccc; cursor: default; }
+		
+
+		aside {
+			width: 50%; 
+			padding: 0; margin: 0 0 1.5em 1.5em;
+			float: right;
+			box-sizing: border-box;
+			line-height: 0;
+		}
+		
+					aside img { width: 100%; }
+					
+					aside div { 
+						line-height: 1.2;
+						padding: 8px 10px 12px 15px;
+					}
+					
+					aside div:not(:first-child) {
+						background-color: #ddd;			
+					}
+
+					aside.quote div:not(:first-child) {
+						background-color: transparent;		
+						text-align: right;	
+					}
+					
+/* 	=========================================
+		CUSTOM SELECTORS
+		========================================= */
+
+		div#hero {
+			background-image: url(../images/hero_background_2.jpg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			height: 200px;
+		}
+
+		div.sticky {
+			position: absolute;
+			right: 10px;
+			bottom: 5px;
+			padding: .5em;
+			box-sizing: border-box;
+			background-color: #ffd700;
+			margin-bottom: 10px;
+			border: 3px solid #ffbf00;
+			box-shadow: 2px 2px 7px black;
+			line-height: 1.2;
+			cursor: pointer;	
+			max-width: 50%;	
+		}
+
+		/* PANELS */
+		div.panel { 
+			border-top: 4px dotted #000; 
+			line-height: 1.5;
+			margin-top: 1em;
+			font-size: 130%;
+			position: relative;
+			box-sizing: border-box;
+			clear: both;
+		}
+		
+		div.panel div.closed { padding: 3.6em 2em 3em 2em; line-height: 2; }
+		div.panel div.interior { padding: 3.6em 2em 3em 2em; } 
+
+		/* GRIDS and BOXES */
+		.grid_1 { grid-template-columns: 1fr; }		
+		.grid_2 { grid-template-columns: 1fr 1fr; }
+		.grid_3 { grid-template-columns: 1fr 1fr 1fr; }
+
+		.grid_1, .grid_2, .grid_3 {
+    	display: grid;
+    	column-gap: 1.5em;
+    	margin-bottom: 1.5em;
+		}		
+
+		.box {
+			padding: 1em 1em 1em 1em;
+			position: relative;
+			background-color: #ccc;
+			min-height: 180px;			/* WILLFIX: good height? */
+			box-sizing: border-box;
+		}
+
+		.box.blank {
+			padding: 0;
+			background-color: transparent;
+			min-height: auto;
+		}
+
+		.box.caption {
+			padding: 0;
+			background-color: #cccc;
+			min-height: auto;
+		}
+		
+		.box.caption img { width: 100%; }
+
+		.box.caption p {
+			padding: 0 5px 7px 12px;
+		}			
+
+/* 	=========================================
+		COLORS and EFFECTS
+		========================================= */
+
+		div.blue 		{	background-color: #89cff0; }
+		div.green 	{	background-color: #a5d6a7; }
+		div.grey 		{	background-color: #ccc; }
+		div.pink 		{	background-color: pink; }
+		div.yellow 	{	background-color: #ffe699; }
+
+		div.tag {
+			padding: 0 4px;
+			background-color: #ddd;
+			display: inline-block;
+			margin: 0 0 2px 2px;
+		}
+		
+		div.tag.blue 		{ background-color: #89cff0; }
+		div.tag.green 	{ background-color: #a5d6a7; }
+		div.tag.grey 		{ background-color: #ccc; }
+		div.tag.pink 		{ background-color: pink; }
+		div.tag.yellow 	{ background-color: #ffe699; }
+		
+		html, body, footer { background-color: #1c567e; }
+		main { background-color: #eee; }		
+		
+		.oswald 	{ font-family: 'Oswald', sans-serif;  }
+		.verdana 	{ font-family: Verdana, Geneva, sans-serif; }
+		.roboto 	{ font-family: 'Roboto Slab', serif;  }	
+		.mono			{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }	
+
+		b.o, b.r, b.m { font-weight: normal; }
+		b.o, h3.o			{ font-family: 'Oswald', sans-serif;  }
+		b.r, h3.r			{ font-family: 'Roboto Slab', serif;  }
+		b.m, h3.m			{ font-family: Courier New, Courier, Lucida Sans 	
+											Typewriter, Lucida Typewriter, monospace; }	
+											
+						b.m {font-weight: bold; }						
+						/* 	^ the Mono version *is* bolded cuz it looks better that way */
+						
+		/* DROP CAP */
+		/* 	this dropcap code was adapted from
+				https://www.newyorker.com/ */
+		div.dropcap::first-letter,
+		p.dropcap::first-letter {
+			/* font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif; */
+			font-family: 'Roboto Slab', serif;
+			letter-spacing: normal;
+			line-break: auto;
+			line-height: 75px;
+			font-size: 75px;
+			font-weight: 400;
+			overflow-wrap: normal;
+			float: left;
+			margin: -3px 0 -10px 0;
+			padding: 0px 0.05em 0px 0px;
+		}
+
+		
+		/* font sizing  */
+		.tiny 	{ font-size: 72%; }
+		.small 	{ font-size: 90%; }
+		.normal { font-size: 100%; }
+		.big 		{ font-size: 120%; letter-spacing: 1px; }
+		.huge 	{ font-size: 150%; letter-spacing: 1px; }
+		.note 	{ font-size: 80%; line-height: 1.2; }
+				/* remove bullet if this note is a list item */
+				li.note { list-style: none;	 }
+				
+		/* spacing */
+		.short { margin-bottom: 0; }
+		h1.short,
+		h2.short { margin-bottom: 0; }
+		.grid_1.short, .grid_2.short, .grid_3.short {
+    	margin-bottom: 0;
+		}			
+		
+		.tall { margin-bottom: .25em; }
+		li.tall { margin-bottom: .25em; }	
+		ul.tall, ol.tall { margin-bottom: .75em; }
+		
+		h1.short , h2.short , h3.short {
+			margin: 0; padidng: 0;
+		}
+		
+		.mobile 	{ display: none; }
+		div.mobile_hr { border-top: 0 solid transparent; }
+		
+		
+			/* 	=========================================
+					VERRRRRRY SPECIFIC
+					========================================= */		
+					/* 3 Things */
+					ol#three_things { margin: 1.5em 0 0 3em; }
+
+							ol#three_things li { margin: 0 0 1em 0; }		
+
+							ol#three_things li::marker {
+								font-family: 'Roboto Slab', serif;
+								font-size: 150%;
+								font-weight: bold;
+								text-shadow: 1px 1px 1px #fff, 2px 2px 0px #999;
+							}		
+
+							table#more_things { margin: 0 0 1em 42px; }		
+							table td { padding: 0 15px 0 0; }	
+
+					/* 3 Skills */
+					div#three_skills div.box { position: relative; }
+					
+					div#three_skills div.box h3 { z-index: 1; position: relative; }
+					/* 	^ this is so the icons are underneath any text */
+					
+					div#three_skills span.material-icons {
+						position: absolute; right: 8px; top: 6px;					
+						font-size: 200%;
+					}	
+					
+					
+					
+					
+					
+					blockquote {
+						line-height: 1.1;
+						background-color: #fff;
+						padding: 30px 50px;
+						font-size: 200%;
+						position: relative;
+					}
+					blockquote p.dropcap::first-letter { font-size: 300%; 
+						margin-top: 1px; }
+					
+					span.l_quote, span.r_quote { font-size: 100px; line-height: 0; }
+					span.l_quote { position: absolute; left: 5px; top: 46px; }
+					span.r_quote { position: absolute; right: 50px; bottom: 37px; }
+
+
+
+/* 	=========================================
+		ALIENS & SPACE
+		========================================= */
+		
+		img.aliens { 
+			display: none; 
+			position: absolute;  
+			right: 8px; bottom: 10px;		
+		}
+		
+/* 	=========================================
+		MOBILE AND NARROW DEVICES
+		========================================= */
+
+@media all and (max-width: 1190px) { 
+
+	html, body { background-color: #1c567e;	}
+
+	header { 
+		background-color: #1c567e; 
+		padding: 1.7em 0 1.9em 1.1em;
+	}
+	
+			header section a {
+				font-size: 40px; letter-spacing: 1px; 
+				text-shadow: 1px 1px 1px #000, 2px 3px 0px #999;
+			}
+			
+	div#hero { height: 100px }
+	
+	div.pre_footer { 
+		border-bottom: 4px dotted #72a0c1;;
+	}			
+				
+	main { padding: 0; }
+	section { width: 100%; }
+	main section { border: none; }	
+
+	h1 { 	font-size: 13vw; letter-spacing: .2vw; }
+	h2 { 	font-size: 30px; letter-spacing: normal; 
+				text-shadow: 1px 1px 1px #fff, 2px 2px 0px #999;
+				margin-top: 1.25em;	
+	}	
+	
+	div.panel { border-top: 4px dotted #72a0c1; }
+	div.panel div.closed { padding: 3.6em 0.8em 3em 0.8em; }
+	div.panel div.interior { padding: 2em 0.8em 3em 0.8em; position: relative; }
+	div.panel:not(:first-child) div.interior { padding-top: 2em; }
+		
+	.grid_1, .grid_2, .grid_3  { display: block; margin: 0; }
+	div.box { margin-bottom: 1em; padding: .75em; }
+
+	/* SPECIAL CASES */	
+	div.sticky { max-width: 48%; right: 25px; } 
+	
+	aside {
+		width: 100%;
+		padding: 0;
+		margin: 0 0 2.5em 0;
+		float: none;
+	}	
+
+	.desktop 	{ display: none; }
+	.mobile 	{ display: inline-block; }		
+	div.mobile_hr { border-top: 1px solid #999; padding-top:1.5em; }
+	
+	ol#three_things { margin: 1.5em 0 0 2em; }
+	ol#three_things li { margin: 0 0 .5em 0; }		
+	table#more_things { margin: 0 0 1em 30px; }	
+	
+					blockquote {
+						line-height: 1.1;
+						background-color: #fff;
+						padding: 30px 20px;
+						font-size: 130%;
+						position: relative;
+					}
+					blockquote p.dropcap::first-letter { font-size: 70px; 
+						margin-top: -10px; }
+					
+					span.l_quote, span.r_quote { font-size: 60px; line-height: 0; }
+					span.l_quote { position: absolute; left: 5px; top: 50px; }
+					span.r_quote { position: absolute; right: 5px; bottom: 37px; }	
+	
+					img.aliens { 
+						right: 12px; bottom: -5px;		
+					}	
+					
+  footer div.box { min-height: auto; }						
+}
+
+
+
+
+
+/* 	=========================================
+		QUIRKY THINGS
+		========================================= */
+		
+		/* positioning ( usually for icons ) */
+		.icn_fix,
+		._1x, ._2x, ._3x, ._4x, ._5x, 
+		.minus_1x, .minus_2x, .minus_3x, .minus_4x, .minus_5x {
+			position: relative;
+		}		
+					._1x { top: 1px; }
+					._2x { top: 2px; }
+					._3x { top: 3px; }
+					._4x { top: 4px; }
+					._5x { top: 5px; }
+		.icn_fix { left: -3px; top: 5px; }
+
+		/* Break long words */
+		.break_me {
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			word-break: break-all;
+			word-break: break-word;
+			hyphens: auto;
+		}
+
+		/* Clear fix */		
+		.clr { clear: both; }
+
+		/* Spinner stuff */
+		div.spinner {
+			visibility: visible;
+			width: 32px;
+			height: 32px;
+			line-height: 0;
+			position: relative;
+			top:-16px;
+			right: -1px;
+			display: inline-block;
+			width: 0px;
+		}
+
+		div.spinner.active {
+			background-image: url('../images/spinner.gif');
+			display: inline-block;
+			width: 32px;
+		}
+		
+		.placeholder { background-color: yellow; }
+
+		.tooltip { 
+			position: absolute; 
+			padding: 5px;
+			margin-right: 25px;
+			white-space: nowrap;
+			background-color: #ffe699;
+			box-sizing: border-box;
+			z-index: 3;
+		}
+/* 	=========================================
+		ALIENS & SPACE
+		========================================= */
+		
+		div#INTRO.panel img#alien_1 {
+			display: block; width: 40px;
+		}	
+
+		div#SOFTWARE.panel img#alien_2 {
+		  display: block; width: 50px;
+		}	
+
+		div#INTRO.panel img#planet_1 {
+			display: block; width: 50px;
+		}	
+		
+		
+/* 	=========================================
+		DEBUGGING
+		========================================= 
+		main section {
+			background-color: Orange;
+			border: 1em solid Red;
+		}		
+
+		div.box.centered .content {	
+			background-color: pink;
+		}	
+		
+		*/
+		
+
+body.debug section.ruler {
+	background-image: url(../images/ruler.png);
+	background-repeat: no-repeat;
+}		
+@media all and (max-width: 1190px) { 
+	body.debug section.ruler {
+		background-image: none;
+	}
+	body.debug header.ruler {
+		background-image: url(../images/ruler.png);
+		background-repeat: no-repeat;
+	}		
+}		
