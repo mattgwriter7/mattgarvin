@@ -428,9 +428,23 @@ table {
 						font-size: 200%;
 					}	
 					
+					/*	WILLFIX: Footer stuff needs tweaking */
+					footer { color: #fff; padding-top: 1.5em; }
+					footer a:link, footer a:visited, footer a:hover, 
+					footer a:active { color: #fff; }
 					
+					footer div.box {
+						line-height: 1.5;
+						height: 120px;
+					}
 					
+					div.box.medium {
+		
+					}
 					
+					div.box.medium td {
+						vertical-align: middle;
+					}					
 					
 					blockquote {
 						line-height: 1.1;
@@ -535,8 +549,11 @@ table {
 					img.aliens { 
 						right: 12px; bottom: -5px;		
 					}	
-					
-  footer div.box { min-height: auto; }						
+	
+	/*	WILLFIX: footer stuff needs tweaking */
+  footer div.box { min-height: auto; margin: 1em 1em; }	
+	
+	
 }
 
 
